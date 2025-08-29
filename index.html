@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JewelBook - Discover Fine Jewellery</title>
+  <meta name="description" content="Explore stunning jewellery across Necklaces, Rings, Earrings and Bracelets. Your sparkle journey starts here!">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👕</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar" id="navbar">
+    <div class="logo">💎 JewelBook</div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#contact">Submit Style</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>FASHION<br>REVOLUTION</h1>
+      <p>Step into the future of style with our avant-garde collection. Where creativity meets elegance, and every outfit tells a story.</p>
+      <div class="hero-buttons">
+        <a href="#categories" class="btn btn-primary">Discover Now</a>
+        <a href="#contact" class="btn btn-secondary">Join the Movement</a>
+      </div>
+    </div>
+    <div class="hero-visual"></div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="categories">
+    <div class="container">
+      <h2 class="fashion-accent">Jewellery Categories</h2>
+      <p class="section-subtitle">Choose your sparkle</p>
+      
+      <div class="card-container">
+        <a href="necklaces.html" class="card" data-category="necklaces">
+          <div class="card-image-wrapper">
+            <img src="casual-wear.jpeg" alt="Casual Wear" loading="lazy">
+            <div class="card-overlay">
+              <span class="card-icon">📿</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Necklaces</h3>
+            <p>Elegant chains, pendants, and statement pieces</p>
+          </div>
+        </a>
+
+        <a href="rings.html" class="card" data-category="rings">
+          <div class="card-image-wrapper">
+            <img src="formal-attire.jpeg" alt="Formal Attire" loading="lazy">
+            <div class="card-overlay">
+              <span class="card-icon">💍</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Rings</h3>
+            <p>Solitaire, bands, and contemporary designs</p>
+          </div>
+        </a>
+
+        <a href="earrings.html" class="card" data-category="earrings">
+          <div class="card-image-wrapper">
+            <img src="accessories.jpeg" alt="Accessories" loading="lazy">
+            <div class="card-overlay">
+              <span class="card-icon">✨</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Earrings</h3>
+            <p>Studs, hoops, and drop earrings for every style</p>
+          </div>
+        </a>
+
+        <a href="bracelets.html" class="card" data-category="bracelets">
+          <div class="card-image-wrapper">
+            <img src="footwear.jpeg" alt="Footwear" loading="lazy">
+            <div class="card-overlay">
+              <span class="card-icon">🔗</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Bracelets</h3>
+            <p>Charms, bangles, and chain bracelets</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="fashion-accent">Why Choose StyleBook?</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">🌟</div>
+          <h3>Curated Collection</h3>
+          <p>Hand-picked styles from fashion experts</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">📱</div>
+          <h3>Mobile Friendly</h3>
+          <p>Access styles anywhere, anytime</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">💡</div>
+          <h3>Style Tips</h3>
+          <p>Expert advice for perfect outfits</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="fashion-accent">Share Your Style</h2>
+      <p class="section-subtitle">Contribute to our growing collection</p>
+      
+      <form class="contact-form" id="styleForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="styleName">Style Name</label>
+          <input type="text" id="styleName" name="styleName" placeholder="What's your style called?" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="necklaces">Necklaces</option>
+            <option value="rings">Rings</option>
+            <option value="earrings">Earrings</option>
+            <option value="bracelets">Bracelets</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="description">Style Description</label>
+          <textarea id="description" name="description" placeholder="Describe your style, inspiration, and key elements..." required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="styling-tips">Styling Tips</label>
+          <textarea id="styling-tips" name="styling-tips" placeholder="Share your styling advice and outfit combinations..." required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">
+          <span>Submit Style</span>
+          <div class="btn-loading"></div>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>👕 StyleBook</h3>
+          <p>Your gateway to fashion excellence</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#contact">Submit Style</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="necklaces.html">Necklaces</a></li>
+            <li><a href="rings.html">Rings</a></li>
+            <li><a href="earrings.html">Earrings</a></li>
+            <li><a href="bracelets.html">Bracelets</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 StyleBook | Crafted with ❤️ for fashion lovers</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
