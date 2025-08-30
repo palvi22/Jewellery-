@@ -1,21 +1,21 @@
-# 👕 StyleBook - Fashion Inspiration Platform
+# 💎 JewelBook - Fine Jewellery Showcase
 
-A modern, responsive fashion showcase website built with HTML5, CSS3, and vanilla JavaScript. StyleBook allows users to explore fashion styles across different categories and submit their own style inspirations.
+A modern, responsive jewellery showcase website built with HTML5, CSS3, and vanilla JavaScript. JewelBook allows users to explore stunning jewellery across different categories including necklaces, rings, earrings, and bracelets.
 
 ## ✨ Features
 
 - **Responsive Design** - Mobile-first approach with modern CSS Grid and Flexbox
-- **Interactive Gallery** - Hover effects, download functionality, and smooth animations
-- **Category Navigation** - Four main fashion categories with dedicated pages
-- **Style Submission Form** - Users can contribute their own fashion styles
-- **Modern UI/UX** - Smooth transitions, parallax effects, and beautiful animations
+- **Interactive Gallery** - Hover effects, smooth animations, and beautiful transitions
+- **Category Navigation** - Four main jewellery categories with dedicated pages
+- **Style Submission Form** - Users can contribute their own jewellery styles
+- **Modern UI/UX** - Smooth transitions, elegant animations, and beautiful jewellery imagery
 - **Cross-browser Compatible** - Works on all modern browsers
 
-## 🎯 Fashion Categories
+## 🎯 Jewellery Categories
 
 1. **📿 Necklaces** - Elegant chains, pendants, and statement pieces
 2. **💍 Rings** - Solitaire, bands, and contemporary designs
-3. **✨ Earrings** - Studs, hoops, and drop earrings
+3. **✨ Earrings** - Studs, hoops, and drop earrings for every style
 4. **🔗 Bracelets** - Charms, bangles, and chain bracelets
 
 ## 🚀 Getting Started
@@ -27,12 +27,12 @@ A modern, responsive fashion showcase website built with HTML5, CSS3, and vanill
 ### Installation
 1. Clone or download the project files
 2. Open `index.html` in your web browser
-3. Navigate through the different fashion categories
-4. Submit your own styles using the contact form
+3. Navigate through the different jewellery categories
+4. Submit your own jewellery styles using the contact form
 
 ### File Structure
 ```
-stylebook/
+jewelbook/
 ├── index.html              # Main landing page
 ├── necklaces.html          # Necklaces gallery
 ├── rings.html              # Rings gallery
@@ -44,13 +44,17 @@ stylebook/
 ├── earrings.js             # Earrings data
 ├── bracelets.js            # Bracelets data
 ├── style.css               # Main stylesheet
+├── necklace.jpeg           # Necklace category image
+├── rings.jpeg              # Rings category image
+├── earings.jpeg            # Earrings category image
+├── bracelet.jpeg           # Bracelet category image
 └── README.md               # Project documentation
 ```
 
 ## 🎨 Customization
 
-### Adding New Styles
-1. Edit the respective JavaScript file (e.g., `casual-wear.js`)
+### Adding New Jewellery Items
+1. Edit the respective JavaScript file (e.g., `necklaces.js`)
 2. Update the `baseURL` to point to your image source
 3. Modify the `totalImages` variable to match your image count
 4. Update image naming convention if needed
@@ -67,7 +71,7 @@ stylebook/
 
 ## 🌐 Image Sources
 
-The platform currently uses placeholder images from Unsplash. To use your own images:
+The platform currently uses jewellery images. To use your own images:
 
 1. **Local Images**: Place images in a local folder and update paths
 2. **CDN/Cloud Storage**: Update the `baseURL` in JavaScript files
@@ -110,9 +114,9 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🙏 Acknowledgments
 
 - Built with modern web technologies
-- Inspired by fashion and style communities
+- Inspired by fine jewellery and luxury design
 - Designed for optimal user experience
 
 ---
 
-**StyleBook** - Your gateway to fashion excellence! 👕✨
+**JewelBook** - Your gateway to jewellery excellence! 💎✨
