@@ -1,6 +1,6 @@
 const galleryContainer = document.getElementById("galleryContainer");
 
-const totalImages = 4; // e1.jpg → eN.jpg
+const totalImages = 9; // e1.jpg → eN.jpg
 const baseURL = "https://jewellery-palvi.s3.ap-south-1.amazonaws.com/earings/";
 
 for (let i = 1; i <= totalImages; i++) {
